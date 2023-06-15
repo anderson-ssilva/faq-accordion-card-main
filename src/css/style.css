@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%) );
+    position: relative;
+}
+
+.container__imageBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    left: 8%;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    background-color: hsl(240, 5%, 91%);
+    border-radius: 20px;
+    height: 70vh;
+    width: 65vw;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.585);
+}
+
+.container__image {
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    background-image: url(/src/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+
+
+.container__image__woman {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20%;
+}
+
+
+.container__Faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.container__Faq ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+}
+
+.container__FaqTitle {
+    font-size: 3rem;
+}
+
+.container__FaqItem {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px hsla(240, 6%, 50%, 0.102);
+    cursor: pointer;
+    gap: 15px;
+}
+
+.container__FaqItem__label {
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    position: relative;
+        
+}
+
+.container__FaqItem__label::before {
+    content: '+' ;
+    font-size: 2.5rem;
+    color: hsl(14, 88%, 65%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    right: 0;
+ }
+
+.container__FaqItem__label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+
+.container__FaqItem__content {
+    color: hsl(240, 6%, 50%);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+/* Mostrar conteudo */
+
+.container__FaqItem.ativo .container__FaqItem__label::before  {
+    content: '-';
+}
+
+.container__FaqItem.ativo .container__FaqItem__label {
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+}
+
+.container__FaqItem.ativo .container__FaqItem__content {
+    height: auto;
+    font-size: 1.2rem;
+    padding-right: 2%;
+    padding-bottom: 15px;
+
+}
+
+/* ------------------------ */
