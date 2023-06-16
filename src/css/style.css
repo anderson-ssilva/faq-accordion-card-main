@@ -11,7 +11,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-20%);
-    left: 8%;
+    left: 10%;
     z-index: 2;
 }
 
@@ -19,9 +19,10 @@ body {
     display: flex;
     background-color: hsl(240, 5%, 91%);
     border-radius: 20px;
-    height: 70vh;
+    height: 68vh;
     width: 65vw;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.585);
+    max-width: 1140px;
 }
 
 .container__image {
@@ -121,5 +122,82 @@ body {
     padding-bottom: 15px;
 
 }
+
+/* ------------------------ */
+
+/* Responsive */
+
+@media(max-width: 1024px){
+    
+    .container__imageBox {
+        left: 2%;
+        height: 150px;
+    }
+    
+    .container {
+        height: 65vh;
+        width: 80vw;
+    }
+
+    .container__image__woman {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -20%;
+        height: 320px;
+    }
+}
+
+@media(max-width: 768px){
+    
+    .container__imageBox {
+        left: 2%;
+        height: 110px;
+    }
+    
+    .container {
+        height: 65vh;
+        width: 80vw;
+    }
+
+    .container__image__woman {
+        height: 250px;
+    }
+
+    .container__FaqTitle {
+        font-size: 2rem;
+    }
+
+    .container__FaqItem__label {
+        font-size: 1.2rem;
+            
+    }
+
+    .container__FaqItem.ativo .container__FaqItem__content {
+        font-size: 1rem;
+    
+    }
+}
+
+@media(max-width: 425px){
+    .container__imageBox {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__image {
+        overflow: auto;
+        background-image: url(/src/images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 2;
+    }
+}
+
+
 
 /* ------------------------ */
