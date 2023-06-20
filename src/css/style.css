@@ -160,8 +160,6 @@ body {
     }
 }
 
-@madia(max-width: )
-
 @media(max-width: 768px){
     
     .container__imageBox {
@@ -200,7 +198,7 @@ body {
 
     .container {
         flex-direction: column;
-        height: 65vh;
+        height: 70vh;
         width: 80vw;
     }
 
@@ -236,7 +234,13 @@ body {
     }
 
     .container__Faq ul {
-        width: 87%;
+        width: 85%;
+    }
+
+    .container__FaqItem.ativo .container__FaqItem__content {
+        padding-right: 15%;
+
+    
     }
 
 }
