@@ -230,17 +230,23 @@ body {
     }
 
     .container__FaqTitle {
+        font-size: 3.2rem;
         text-align: center;
     }
 
+    .container__FaqItem__label {
+        font-size: 1.4rem;
+            
+    }
+
     .container__Faq ul {
-        width: 85%;
+        width: 90%; 
     }
 
     .container__FaqItem.ativo .container__FaqItem__content {
         height: auto;
-        font-size: 1.2rem;
-        padding-right: 10%;
+        font-size: 1.3rem;
+        padding-right: 2%;
         padding-bottom: 15px;
     
     }
