@@ -238,8 +238,10 @@ body {
     }
 
     .container__FaqItem.ativo .container__FaqItem__content {
-        padding-right: 15%;
-
+        height: auto;
+        font-size: 1.2rem;
+        padding-right: 10%;
+        padding-bottom: 15px;
     
     }
 
